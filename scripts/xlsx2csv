@@ -21,13 +21,13 @@ sub usage {
     print "       $cmd --help | --man | --info\n";
     print "          --list    List supported spreadsheet formats and exit\n";
     print "    -A    --all     Export all sheets      (filename-sheetname.csv)\n";
-    print "    -N    --no-pfx  No filene prefix on -A (sheetname.csv)\n";
+    print "    -N    --no-pfx  No filename prefix on -A (sheetname.csv)\n";
     print "    -Z    --zip     Convert sheets to CSV's in ZIP\n";
     print "    -J s  --join=s  Use s to join filename-sheetname (-)\n";
     print "    -o f  --out=f   Set output filename\n";
-    print "    -i f  --in=f    Set infut  filename\n";
+    print "    -i f  --in=f    Set input filename\n";
     print "    -f    --force   Force overwrite output if exists\n";
-    print "    -s s  --sep=s   Set CSV separator character\n";
+    print "    -s s  --sep=s   Set CSV separator character (,)\n";
     print "Unless -A is used, all other options are passed on to xlscat\n";
     @_ and print join "\n", @_, "";
     exit $err;
